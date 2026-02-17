@@ -1,0 +1,230 @@
+*,
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #e8f5e9;
+}
+
+.tittle_kasir {
+    position: relative;
+    left: 480px;
+    top: 20px;
+}
+
+.total_uang {
+    position: relative;
+    left: 515px;
+    top: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.button_stok {
+    position: relative;
+    left: 90%;
+    width: 50px;
+    height: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background: #2e7d32;
+    border-radius: 10px;
+}
+
+.button_stok:hover {
+    background-color: #1b5e20;
+}
+
+.container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+    justify-content: center;
+}
+
+.list_pelanggan {
+    width: 180px;
+    height: 230px;
+    background-image: url("../img/catatan_pelanggan.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.urutan_pelanggan {
+    position: relative;
+    top: 35px;
+    left: 42px;
+    font-weight: 600;
+}
+
+span {
+    position: relative;
+    top: 35px;
+    left: 55px;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.button_tangani {
+    position: relative;
+    top: 60px;
+    left: 55px;
+    border: none;
+    background-color: red;
+    padding: 8px;
+}
+
+.button_tangani a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-kembali,
+.btn-tambah {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #fff;
+    background: #2e7d32;
+    padding: 8px 14px;
+    margin-top: 10px;
+    border-radius: 6px;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-kembali:hover,
+.btn-tambah:hover {
+    background: #1b5e20;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+thead {
+    background: #2e7d32;
+    color: #fff;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+th {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #eee;
+    transition: 0.2s ease-in-out;
+}
+
+tbody tr:hover {
+    background-color: #f1f3f5;
+}
+
+.warning-info {
+    padding: 10px 15px;
+    background-color: #fff3cd;
+    color: #856404;
+    border-left: 5px solid #ffc107;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.edit,
+.hapus {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.container-stok {
+    background: white;
+    padding: 35px;
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.container-stok a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease-in-out;
+}
+
+.container-stok a:hover {
+    color: #1b5e20;
+}
+
+.container-stok h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.container-stok label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #555;
+}
+
+.container-stok input {
+    width: 370px;
+    padding: 10px;
+    margin: 8px 0 18px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+.container-stok input[readonly] {
+    background-color: #f1f8e9;
+    font-weight: bold;
+}
+
+.container-stok input:focus {
+    border-color: #1b5e20;
+    outline: none;
+    box-shadow: 0 0 5px rgba(78, 115, 223, 0.5);
+}
+
+.container-stok button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    background: #2e7d32;
+    color: white;
+}
+
+.container-stok button:hover {
+    background: #1b5e20;
+}
+
+.container-stok .error {
+    background-color: #ffcdd2;
+    color: #b71c1c;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    text-align: center;
+}
