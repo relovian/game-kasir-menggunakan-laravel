@@ -4,18 +4,9 @@ use App\Models\dompet;
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <title>game kasir sederhana</title>
-</head>
-<body>
-    <h1 class='tittle_kasir'>Kasir Mini Market</h1>
+<x-layouts>
+    <x-slot:main>
+         <h1 class='tittle_kasir'>Kasir Mini Market</h1>
         <h1 class='total_uang'>total uang : Rp. {{ dompet::sum('kas') }}</h1>    
     <a class="button_stok" href="/StokBarang">Lihat Stok</a>
 
@@ -56,6 +47,5 @@ use App\Models\dompet;
         @endfor
     </div>
 
-</body>
-
-</html>
+    </x-slot:main>
+</x-layouts>

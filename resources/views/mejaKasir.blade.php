@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>meja kasir</title>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-</head>
-<body style="display: flex; justify-content: center; width: 100%; margin-top: 30px;">
-    <div class="container-stok">
+<x-layouts>
+    <x-layouts:main>
+        <div class="container-stok">
         <a href="{{ route('kasir.index') }}"> ❮ Kembali </a>
 
         <h1>Meja Kasir</h1>
@@ -33,6 +25,21 @@
             <button type="submit">selesai</button>
         </form>
     </div>
+    </x-layouts:main>
+    
+</x-layouts>
+
+
+{{-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>meja kasir</title>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+</head>
+<body style="display: flex; justify-content: center; width: 100%; margin-top: 30px;">
 
 </body>
-</html>
+</html> --}}
